@@ -41,7 +41,7 @@
   "homepage": "https://cherishtong.github.io/wv-vue3-ui/",
   "scripts": {
     "dev": "vp dev",
-    "build": "vp build",
+    "build": "vite build",
     "build:ci": "vite build",
     "pack": "vite build --config vite.lib.config.ts",
     "preview": "vp preview",
@@ -70,7 +70,7 @@
     "jsdom": "^29.0.2",
     "tailwindcss": "^4.2.4",
     "typescript": "~6.0.2",
-    "vite": "catalog:",
+    "vite": "^8.0.8",
     "vite-plus": "catalog:",
     "vue": "^3.5.33"
   },

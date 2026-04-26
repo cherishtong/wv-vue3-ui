@@ -18,11 +18,9 @@ jobs:
           node-version: '22'
           cache: 'pnpm'
 
-      - run: |
-          curl -fsSL https://vite.plus | bash
-          export PATH="$HOME/.local/bin:$PATH"
-          pnpm install --no-frozen-lockfile
-          vp build
+      - run: pnpm install --no-frozen-lockfile
+
+      - run: pnpm run build
 
       - uses: JamesIves/github-pages-deploy-action@v4
         with:

@@ -22,7 +22,7 @@ jobs:
 
       - run: pnpm install --no-frozen-lockfile
 
-      - run: pnpm build
+      - run: npx --yes vite@8 build
 
       - uses: JamesIves/github-pages-deploy-action@v4
         with:

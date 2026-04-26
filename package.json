@@ -41,7 +41,7 @@
   "homepage": "https://cherishtong.github.io/wv-vue3-ui/",
   "scripts": {
     "dev": "vp dev",
-    "build": "vite build",
+    "build": "npx --yes vite@8 build",
     "build:ci": "vite build",
     "pack": "vite build --config vite.lib.config.ts",
     "preview": "vp preview",

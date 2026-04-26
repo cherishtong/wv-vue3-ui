@@ -14,7 +14,7 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./style.css": "./dist/style.css"
+    "./style.css": "./dist/index.css"
   },
   "files": [
     "dist",
@@ -41,9 +41,9 @@
   "homepage": "https://cherishtong.github.io/wv-vue3-ui/",
   "scripts": {
     "dev": "vp dev",
-    "build": "tsc && vp build",
-    "pack": "vp pack",
-    "deploy": "vp build",
+    "build": "vite build",
+    "build:ci": "vite build",
+    "pack": "vite build --config vite.lib.config.ts",
     "preview": "vp preview",
     "prepare": "vp config"
   },

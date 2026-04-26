@@ -1,0 +1,15 @@
+node_modules/
+src/
+tests/
+docs/
+*.config.*
+vite.config.ts
+vitest.config.ts
+tsdown.config.ts
+tsconfig.json
+pnpm-lock.yaml
+pnpm-workspace.yaml
+index.html
+AGENTS.md
+.vite-hooks/
+public/

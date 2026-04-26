@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1a1a1b;
+  --color-paper: #f9f6f1;
+  --color-vermilion: #b91c1c;
+  --color-dark-matrix: #09090b;
+
+  --font-family-serif: "Noto Serif SC", "Songti SC", serif;
+  --font-family-sans: "Noto Sans SC", "PingFang SC", sans-serif;
+
+  --shadow-depth-1: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-depth-2: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-depth-3: 0 12px 40px rgba(0, 0, 0, 0.1);
+  --shadow-depth-4: 0 24px 80px rgba(0, 0, 0, 0.14);
+  --shadow-inner-top: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  --shadow-inner-top-dark: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  --animate-shine: shine 4s linear infinite;
+  --animate-breathe: breathe 6s ease-in-out infinite;
+  --animate-orb-float: orbFloat 12s ease-in-out infinite;
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+@keyframes breathe {
+  0%, 100% { letter-spacing: 0.05em; }
+  50% { letter-spacing: 0.12em; }
+}
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -30px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+/* Motion Presets */
+@keyframes wv-breathe {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+@keyframes wv-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-16px); }
+}
+@keyframes wv-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@keyframes wv-ripple {
+  0% { transform: scale(0.5); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+@keyframes wv-rotate {
+  to { transform: rotate(360deg); }
+}
+@keyframes wv-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(185, 28, 28, 0.5); }
+  70% { box-shadow: 0 0 0 20px rgba(185, 28, 28, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(185, 28, 28, 0); }
+}
+@keyframes wv-status-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+@keyframes wv-scroll-pulse {
+  0%, 100% { opacity: 0.4; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(8px); }
+}

@@ -12,6 +12,3 @@ peerDependencyRules:
   allowedVersions:
     vite: "*"
     vitest: "*"
-  allowedVersions:
-    vite: "*"
-    vitest: "*"

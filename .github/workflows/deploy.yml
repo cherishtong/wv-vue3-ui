@@ -13,7 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
+      - name: Install VitePlus CLI
+        run: curl -fsSL https://vite.plus | bash
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
 
       - uses: actions/setup-node@v4
         with:
@@ -22,7 +26,7 @@ jobs:
 
       - run: pnpm install --no-frozen-lockfile
 
-      - run: npx --yes vite@8 build
+      - run: ~/.vite-plus/*/bin/vp build
 
       - uses: JamesIves/github-pages-deploy-action@v4
         with:

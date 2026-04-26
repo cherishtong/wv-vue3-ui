@@ -14,9 +14,4 @@ export default defineConfig({
       "@": resolve(__dirname, "src"),
     },
   },
-  staged: {
-    "*": "vp check --fix",
-  },
-  fmt: {},
-  lint: { options: { typeAware: true, typeCheck: true } },
 });
